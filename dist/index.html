@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/img/favicon.svg" />
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="/assets/css/app.min.css" rel="stylesheet" />
+
+  <title>Sausage</title>
+</head>
+
+<body>
+
+  <header class="header__wrapper">
+    <div class="container">
+        <nav class="nav_header">
+            <div class="humbuger_wrap">
+                <a href="javascript:" class="brand">
+                    <img src="../../assets/img/icons/logo.svg" alt="Sasuage logo" />
+                </a>
+
+                <button class="btn_humburger" id="humguberBtn">
+                    <span>Menu</span>
+                </button>
+            </div>
+            <ul class="nav_list" id="humbugerMenu">
+                <li>
+                    <a href="javascript:" class="active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Activities
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Sponsors
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Schedule
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <section class="hero__video__wrapper">
+    <div class="container">
+      <div class="title_wrap">
+        <h6>Welcome to</h6>
+        <h1 class="title80">It's a Sausage <br />
+          Fest 2025</h1>
+        <a href="javascript:" class="btnOrange"><span>Register for event</span></a>
+      </div>
+
+      <video autoplay loop muted>
+        <source src="../assets/img/video/brand.mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="sponsors__wrapper">
+    <div class="titleFLex24">
+      <img src="../assets/img/home/pattern.svg" alt="" />
+      <h2>OUR SPONSORS</h2>
+    </div>
+
+    <div class="swiper mySwiper sponsorsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/1.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/2.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/3.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/4.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/5.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/6.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/7.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/8.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/9.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/sponsors/10.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sausage__wrapper">
+    <div class="container">
+      <div class="flex_wrap">
+        <div class="title">
+          <h2 class="title48">EXPERIENCE SAUSAGES FROM <br /> AROUND THE WORLD</h2>
+          <p class="sub18">Every country has a unique sausage tradition and puts their own <br /> twist on the classic
+            meat.</p>
+        </div>
+
+        <div class="tab_buttons">
+          <button class="tabBtn active" data-tab="tab1">1</button>
+          <button class="tabBtn" data-tab="tab2">2</button>
+        </div>
+      </div>
+
+      <div class="tabContent active" id="tab1">
+        <div class="row row-gap-5">
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/1.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/france.svg" alt="" />
+                  <span>France</span>
+                </div>
+              </div>
+
+              <h4>Andouillette</h4>
+              <p>Andouillette is a French coarse-grained sausage made from the intestine of pork, pepper, wine, onions,
+                and seasonings.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/2.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/spain.svg" alt="" />
+                  <span>Spain</span>
+                </div>
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/maxico.svg" alt="" />
+                  <span>Maxico</span>
+                </div>
+              </div>
+
+              <h4>Chorizo</h4>
+              <p>Chorizo is a type of pork sausage originating from the Iberian Peninsula.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/3.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/germany.svg" alt="" />
+                  <span>Germany</span>
+                </div>
+              </div>
+
+              <h4>Bratwurst</h4>
+              <p>Bratwurst is a type of German sausage made from pork or, less commonly, beef or veal. </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/4.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/argentina.svg" alt="" />
+                  <span>Argentina</span>
+                </div>
+              </div>
+
+              <h4>Longaniza</h4>
+              <p>Longaniza is a Spanish sausage similar to a chorizo and also closely associated with the Portuguese
+                linguica.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/5.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/thailand.svg" alt="" />
+                  <span>Thailand</span>
+                </div>
+              </div>
+
+              <h4>Sai Ua</h4>
+              <p>Sai ua or northern Thai sausage or Chiang Mai sausage is a grilled pork sausage from northern Thailand
+                and northeastern Burma.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/6.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/philippines.svg" alt="" />
+                  <span>Philippines</span>
+                </div>
+              </div>
+
+              <h4>Longganisa</h4>
+              <p>Longaniza is a Spanish sausage similar to a chorizo and also closely associated with the Portuguese
+                linguica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabContent" id="tab2">
+        <div class="row row-gap-5">
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/1.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/france.svg" alt="" />
+                  <span>France</span>
+                </div>
+              </div>
+
+              <h4>Andouillette</h4>
+              <p>Andouillette is a French coarse-grained sausage made from the intestine of pork, pepper, wine, onions,
+                and seasonings.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/2.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/spain.svg" alt="" />
+                  <span>Spain</span>
+                </div>
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/maxico.svg" alt="" />
+                  <span>Maxico</span>
+                </div>
+              </div>
+
+              <h4>Chorizo</h4>
+              <p>Chorizo is a type of pork sausage originating from the Iberian Peninsula.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/3.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/germany.svg" alt="" />
+                  <span>Germany</span>
+                </div>
+              </div>
+
+              <h4>Bratwurst</h4>
+              <p>Bratwurst is a type of German sausage made from pork or, less commonly, beef or veal. </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/4.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/argentina.svg" alt="" />
+                  <span>Argentina</span>
+                </div>
+              </div>
+
+              <h4>Longaniza</h4>
+              <p>Longaniza is a Spanish sausage similar to a chorizo and also closely associated with the Portuguese
+                linguica.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/5.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/thailand.svg" alt="" />
+                  <span>Thailand</span>
+                </div>
+              </div>
+
+              <h4>Sai Ua</h4>
+              <p>Sai ua or northern Thai sausage or Chiang Mai sausage is a grilled pork sausage from northern Thailand
+                and northeastern Burma.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="sausage_card">
+              <img src="../assets/img/home/sausage/6.png" class="img" alt="" />
+              <div class="flexTag">
+                <div class="flagTag">
+                  <img src="../assets/img/home/sausage/philippines.svg" alt="" />
+                  <span>Philippines</span>
+                </div>
+              </div>
+
+              <h4>Longganisa</h4>
+              <p>Longaniza is a Spanish sausage similar to a chorizo and also closely associated with the Portuguese
+                linguica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="experience__wrapper">
+    <div class="container">
+      <div class="wrapper">
+        <div class="title_wrap">
+          <h2 class="title48">EXPERIENCE MORE THAN JUST SAUSAGES</h2>
+          <p class="sub18">Every country has a unique sausage tradition and puts their own twist on the classic meat.
+          </p>
+        </div>
+
+        <div class="img_wrap">
+          <img src="../assets/img/home/experience/1.png" class="img1" alt="" />
+          <img src="../assets/img/home/experience/2.png" class="img2" alt="" />
+          <img src="../assets/img/home/experience/3.png" class="img3" alt="" />
+          <img src="../assets/img/home/experience/4.png" class="img4" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fun__time__section">
+    <div class="container">
+      <div class="title_wrap">
+        <h2 class="title48">FUN TIMES</h2>
+        <p class="sub18">We have games, contests, celebrity chef, comedians, musical artists and more! It’s a fun-filled
+          day for the whole family!</p>
+      </div>
+      <div class="outer_flex">
+        <div class="inner_flex">
+          <div class="card_fun">
+            <img src="../assets/img/home/fun/1.png" alt="" />
+            <div class="funTag">
+              <span>Celebrity Chefs</span>
+            </div>
+          </div>
+          <div class="card_fun">
+            <img src="../assets/img/home/fun/2.png" alt="" />
+            <div class="funTag">
+              <span>Music</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="inner_flex">
+          <div class="card_fun">
+            <img src="../assets/img/home/fun/3.png" alt="" />
+            <div class="funTag">
+              <span>Comedians</span>
+            </div>
+          </div>
+
+          <div class="card_fun">
+            <img src="../assets/img/home/fun/4.png" alt="" />
+            <div class="funTag">
+              <span>Games</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="good__sausage__wrapper">
+    <div class="container">
+      <div class="grandient_wrap">
+        <div class="main_flex">
+          <div class="contents">
+            <h2>We love the aesthetics of <br /> good sausage food</h2>
+            <a href="javascript:" class="btnOrange btnLightOrange"><span>Learn more</span></a>
+          </div>
+
+          <div class="img_grid">
+            <div class="img">
+              <img src="../assets/img/home/good/1.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="../assets/img/home/good/2.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="../assets/img/home/good/3.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="../assets/img/home/good/4.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="../assets/img/home/good/5.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="../assets/img/home/good/1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="musical__wrapper">
+    <h2 class="title48">Musical Artists & MORE</h2>
+    <div class="swiper mySwiper musicalSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../assets/img/home/musical/1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/musical/1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/musical/1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/musical/1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/musical/1.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../assets/img/home/musical/1.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="outer_wrap">
+        <div class="inner_wrap">
+            <div class="contents">
+                <div class="img">
+                    <img src="../../assets/img/footer/sausage.svg" alt="" />
+                </div>
+                <h2 class="title80">We Look Forward <br /> To Serve You!</h2>
+
+                <a href="javascript:" class="btnOrange btnLightOrange"><span>Contact us</span></a>
+            </div>
+
+            <ul class="footer_nav_list">
+                <li>
+                    <a href="javascript:">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Activities
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Sponsors
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Schedule
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer_nav_bottom">
+        <p>Copyright Reserved 2025</p>
+        <ul class="bottom_list">
+            <li>
+                <a href="javascript:">
+                    Privacy Policy
+                </a>
+            </li>
+            <li>
+                <a href="javascript:">
+                    Terms & Conditions
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/assets/js/app.min.js"></script>
+
+  <script>
+    var swiperSponsors = new Swiper(".sponsorsSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 6,
+        },
+        1024: {
+          slidesPerView: 8,
+          spaceBetween: 92,
+        },
+      },
+    });
+  </script>
+
+  <script>
+    const tabButtons = document.querySelectorAll(".tabBtn");
+    const tabContents = document.querySelectorAll(".tabContent");
+
+    tabButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const target = button.getAttribute("data-tab");
+        tabButtons.forEach(btn => btn.classList.remove("active"));
+        tabContents.forEach(content => content.classList.remove("active"));
+        button.classList.add("active");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+  </script>
+
+  <script>
+    var swiperMusical = new Swiper(".musicalSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      speed: 8000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 2,
+        },
+      },
+    });
+  </script>
+
+</body>
+
+</html>

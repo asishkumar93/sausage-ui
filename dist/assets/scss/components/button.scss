@@ -1,0 +1,47 @@
+.btnOrange {
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    background: #E65005;
+    padding: 12px 32px;
+    border-radius: 12px;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+        background: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: 0.2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 40px;
+    }
+
+    span {
+        color: #FFFFFF;
+    }
+
+    &.btnLightOrange {
+        background: #FFEDE6;
+
+        &::after {
+            opacity: 0.4;
+        }
+
+        span {
+            color: #E65005;
+        }
+    }
+
+    &:hover {
+        &:after {
+            left: 120%;
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+}

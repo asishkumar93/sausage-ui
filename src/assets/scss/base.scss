@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+// @use "_fonts";
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #727272;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #727272;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #727272;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  line-height: normal;
+}
+
+.container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1116px;
+  }
+}
+
+// Title
+.title80 {
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 110%;
+  color: #081F42;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-transform: uppercase;
+
+  @media screen and (max-width:767px) {
+    font-size: 32px;
+  }
+}
+
+.title48 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 110%;
+  color: #081F42;
+  font-family: "Bricolage Grotesque", sans-serif;
+
+  @media screen and (max-width:767px) {
+    font-size: 32px;
+  }
+}
+
+.titleFLex24 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 110%;
+    color: #081F42;
+    margin: 0 0 0 8px;
+  }
+}
+
+
+// Sub Title
+
+.sub18 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #616F86;
+}
