@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" />
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="/assets/css/app.min.css" rel="stylesheet" />
+
+    <title>Sausage</title>
+</head>
+
+<body>
+
+    <header class="header__wrapper">
+    <div class="container">
+        <nav class="nav_header">
+            <div class="humbuger_wrap">
+                <a href="javascript:" class="brand">
+                    <img src="../../assets/img/icons/logo.svg" alt="Sasuage logo" />
+                </a>
+
+                <button class="btn_humburger" id="humguberBtn">
+                    <span>Menu</span>
+                </button>
+            </div>
+            <ul class="nav_list" id="humbugerMenu">
+                <li>
+                    <a href="javascript:" class="active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Activities
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Sponsors
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Schedule
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="vendors__banner__wrapper">
+        <div class="container">
+            <div class="main_wrap">
+                <img src="../assets/img/vendors/bg.png" alt="" />
+                <div class="contents">
+                    <h1 class="title48">ReGISTER FOR an Exhibitor/Vendor</h1>
+
+                    <p class="sub18">Bring your boldest bites, brews, and handmade goods to the
+                        ultimate flavor-packed fest! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vendors__form__wrapper">
+        <div class="container">
+            <div class="form_wrap">
+                <h2>Fill up the information to get registered</h2>
+                <form action="" id="vendorForm">
+                    <div class="form_flex">
+                        <div class="formGroup">
+                            <label for="">1. Which city are you applying to be a vendor in?<sup>*</sup></label>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio1" name="city">
+                                <label for="radio1">City name</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio2" name="city">
+                                <label for="radio2">City name</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio3" name="city">
+                                <label for="radio3">City name</label>
+                            </div>
+                            <div class="errorMsg">Please select a city</div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">2. Your booth setup<sup>*</sup></label>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio4" name="setup">
+                                <label for="radio4">Vendor Tents are self-supplied.</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio5" name="setup">
+                                <label for="radio5">Food truck</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio6" name="setup">
+                                <label for="radio6">Vendor Tent</label>
+                            </div>
+                            <div class="errorMsg">Please select one of those options</div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">3. Do you need power<sup>*</sup></label>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio7" name="power">
+                                <label for="radio7">I need Electricity</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio8" name="power">
+                                <label for="radio8">I have my own generator</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio9" name="power">
+                                <label for="radio9">Power not needed</label>
+                            </div>
+                            <div class="errorMsg">Please select one of those options</div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="">4. What will you be offering at ItsASausageFest?<sup>*</sup></label>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio10" name="offers">
+                                <label for="radio10">Food</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio11" name="offers">
+                                <label for="radio11">Non-Alcoholic Beverages</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio12" name="offers">
+                                <label for="radio12">Products</label>
+                            </div>
+                            <div class="radio_wrap">
+                                <input type="radio" id="radio13" name="offers">
+                                <label for="radio13">Other</label>
+                            </div>
+                            <div class="errorMsg">Please select one of those options</div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="brief">5. Brief description of menu/offerings<sup>*</sup></label>
+                            <textarea name="brief" id="brief" class="controls textArea" rows="10"
+                                placeholder="Write your offerings"></textarea>
+
+                            <!-- <input type="text" name="brief" id="brief" class="controls brief"
+                                placeholder="Write your offerings"> -->
+                            <div class="errorMsg">Please write your offerings</div>
+                        </div>
+                        <div class="formGroup">
+                            <div class="innerFormGroup">
+                                <label for="name">6. Enter your contact name<sup>*</sup></label>
+                                <input type="text" name="" id="name" class="controls"
+                                    placeholder="Write name of the contact person">
+                                <div class="errorMsg">Enter your contact name</div>
+                            </div>
+                            <div class="innerFormGroup">
+                                <label for="email">6. Enter your email address?<sup>*</sup></label>
+                                <input type="text" name="" id="email" class="controls"
+                                    placeholder="Write your email address">
+                                <div class="errorMsg">Enter your email address</div>
+                            </div>
+                            <div class="innerFormGroup">
+                                <label for="phone">7. Enter your phone number?<sup>*</sup></label>
+                                <input type="text" name="" id="phone" class="controls"
+                                    placeholder="Write your phone number">
+                                <div class="errorMsg">Enter your phone number</div>
+                            </div>
+                        </div>
+                        <div class="formGroup">
+                            <label for="comment">9. Any additional comments?</label>
+                            <textarea name="comment" id="comment" class="controls textAreaLast" rows="2"
+                                placeholder="Any other things which we need to know"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btnOrange"><span>Register for Exhibitor/Vendor</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="musical__wrapper vendors_swiper">
+        <div class="title_wrap">
+            <h2 class="title48">Why become an exhibitor?</h2>
+            <p class="sub18">We have games, contests, celebrity chef, comedians, musical artists and more! It’s a
+                fun-filled day for
+                the
+                whole family!</p>
+        </div>
+
+        <div class="swiper mySwiper musicalSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../assets/img/home/musical/1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/home/musical/1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/home/musical/1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/home/musical/1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/home/musical/1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="../assets/img/home/musical/1.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="terms__conditions__wrapper">
+        <div class="container">
+            <h2 class="title48">Terms & Conditions</h2>
+            <h3>Exhibitors will have the opportunity to:</h3>
+            <ul>
+                <li>Attract the desired audience</li>
+                <li>Increase awareness of tea trends</li>
+                <li>Elevate their corporate profile</li>
+                <li>Expand their business through educational opportunities, product sampling, and retail experiences
+                </li>
+            </ul>
+
+            <h3>Exhibitors are responsible for:</h3>
+            <ul>
+                <li>Keeping their exhibit open from 10:00 AM to 5:00 PM on both days to provide a complete experience
+                    for
+                    attendees</li>
+                <li>Adhering to all Food Safety Guidelines</li>
+                <li>Elevate their corporate profile</li>
+                <li>Expand their business through educational opportunities, product sampling, and retail experiences
+                </li>
+            </ul>
+
+            <h3>Time Schedule:</h3>
+
+            <ol>
+                <li>
+                    <h5>Saturay, January 31, 2026</h5>
+                </li>
+                <li>
+                    <h6>
+                        <span>Setup booth: 7:00 AM <span>-</span> 09:30 AM</span>
+                    </h6>
+                </li>
+
+                <li>
+                    <h6>
+                        <span>Clean up: 5:00 PM <span>-</span> 6:00 PM</span>
+                    </h6>
+                </li>
+
+                <li>
+                    <h5>Sunday, Februry 1, 2026</h5>
+                </li>
+
+                <li>
+
+                    <h6>
+                        <span>Setup booth: 7:00 AM <span>-</span> 09:30 AM</span>
+                    </h6>
+                </li>
+
+                <li>
+                    <h6>
+                        <span>Clean up: 5:00 PM <span>-</span> 6:00 PM</span>
+                    </h6>
+                </li>
+            </ol>
+
+
+
+
+
+
+
+
+
+
+            <h4>Early Bird Pricing is available until October 31, 2025</h4>
+
+            <h3>Cancellation Policy:</h3>
+            <p>No refunds for registration will be issued after November 30, 2025.</p>
+
+            <h3>Exhibitor space includes the following:</h3>
+            <ul>
+                <li>One six (6) foot table</li>
+                <li>Two Chairs</li>
+            </ul>
+
+            <h3>Exhibitor space does NOT include:</h3>
+            <ul>
+                <li>Preparation supplies and accessories (such as teapots, sample cups, napkins, etc)</li>
+                <li>Dolly (Please bringing your own to make things smoother for your setup)</li>
+                <li>Payment system, floats/change, credit/interact terminals</li>
+                <li>Tablecloths</li>
+                <li>Access to tap water</li>
+                <li>Wireless capacity with limited internet access</li>
+                <li>Power Bar</li>
+                <li>Shelving Systems</li>
+                <li>Dishwasher and kitchen facilities</li>
+                <li>Liability Insurance for Exhibitors</li>
+                <li>Parking</li>
+                <li>Garbage can</li>
+            </ul>
+
+            <h3>Exhibitor can order the following items at an additional cost:</h3>
+            <ul>
+                <li>Electricity • Table (6 Foot)</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="footer">
+    <div class="outer_wrap">
+        <div class="inner_wrap">
+            <div class="contents">
+                <div class="img">
+                    <img src="../../assets/img/footer/sausage.svg" alt="" />
+                </div>
+                <h2 class="title80">We Look Forward <br /> To Serve You!</h2>
+
+                <a href="javascript:" class="btnOrange btnLightOrange"><span>Contact us</span></a>
+            </div>
+
+            <ul class="footer_nav_list">
+                <li>
+                    <a href="javascript:">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Activities
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Sponsors
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Schedule
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer_nav_bottom">
+        <p>Copyright Reserved 2025</p>
+        <ul class="bottom_list">
+            <li>
+                <a href="javascript:">
+                    Privacy Policy
+                </a>
+            </li>
+            <li>
+                <a href="javascript:">
+                    Terms & Conditions
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/app.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('vendorForm');
+            const errorMessages = document.querySelectorAll('.errorMsg');
+            const inputs = form.querySelectorAll('input, textarea');
+
+            // Hide all error messages initially
+            errorMessages.forEach(msg => msg.style.display = 'none');
+
+            // Utility: Validate a group of radio buttons
+            function validateRadioGroup(groupName) {
+                const group = form.querySelectorAll(`input[name="${groupName}"]`);
+                const isChecked = Array.from(group).some(radio => radio.checked);
+                const errorMsg = group[0]?.closest('.formGroup')?.querySelector('.errorMsg');
+                if (errorMsg) errorMsg.style.display = isChecked ? 'none' : 'block';
+                return isChecked;
+            }
+
+            // Utility: Validate a text input or textarea
+            // function validateField(field) {
+            //     const errorMsg = field.closest('.formGroup')?.querySelector('.errorMsg') &&
+            //         field.closest('.innerFormGroup')?.querySelector('.errorMsg');
+            //     if (!errorMsg) return true;
+
+            //     const isValid = field.value.trim() !== '';
+            //     errorMsg.style.display = isValid ? 'none' : 'block';
+            //     return isValid;
+            // }
+
+            function validateField(field) {
+                const container = field.closest('.innerFormGroup') || field.closest('.formGroup');
+                const errorMsg = container?.querySelector('.errorMsg');
+                if (!errorMsg) return true;
+
+                let isValid = true;
+                const value = field.value.trim();
+
+                if (field.id === 'email') {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    isValid = emailRegex.test(value);
+                } else if (field.id === 'phone') {
+                    const phoneRegex = /^[0-9]{10}$/;
+                    isValid = phoneRegex.test(value);
+                } else {
+                    isValid = value !== '';
+                }
+
+                errorMsg.style.display = isValid ? 'none' : 'block';
+                return isValid;
+            }
+
+
+            // Attach onchange validation for all inputs and textareas
+            inputs.forEach(input => {
+                input.addEventListener('change', () => {
+                    if (input.type === 'radio') {
+                        validateRadioGroup(input.name);
+                    } else {
+                        validateField(input);
+                    }
+                });
+            });
+
+            // Handle form submission
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+
+                // Validate all radio groups
+                const radioGroups = ['city', 'setup', 'power', 'offers'];
+                radioGroups.forEach(name => {
+                    isValid = validateRadioGroup(name) && isValid;
+                });
+
+
+                // Validate textareas and text inputs
+                const requiredFields = ['brief', 'name', 'email', 'phone'];
+                requiredFields.forEach(id => {
+                    const field = document.getElementById(id);
+                    if (field) {
+                        isValid = validateField(field) && isValid;
+                    }
+                });
+
+                // If valid, show thank you message
+                if (isValid) {
+                    const thankYou = document.createElement('div');
+                    thankYou.textContent = 'Thank you for submitting the form!';
+                    thankYou.style.cssText = 'padding: 15px; margin-top: 20px; background: #4CAF50; color: white; text-align: center;';
+                    form.after(thankYou);
+                    form.reset();
+
+                    // Remove thank you message after 3 seconds
+                    setTimeout(() => {
+                        thankYou.remove();
+                    }, 3000);
+
+                    // Hide any error messages
+                    errorMessages.forEach(msg => msg.style.display = 'none');
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        var swiperMusical = new Swiper(".musicalSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            speed: 8000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
