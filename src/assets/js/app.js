@@ -17,3 +17,19 @@ toggleBtn.addEventListener("click", () => {
   box.classList.toggle("show");
   toggleBtn.classList.toggle("close");
 });
+
+//Navbar Link Active
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname.split("/").pop();
+  const links = document.querySelectorAll(".nav_list a");
+
+  links.forEach((link) => {
+    const linkPath = link.getAttribute("href").split("/").pop();
+    if (
+      linkPath === currentPath ||
+      (linkPath === "index.html" && currentPath === "")
+    ) {
+      link.classList.add("active");
+    }
+  });
+});

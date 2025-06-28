@@ -1,8 +1,10 @@
 .footer {
     padding: 40px 40px 0 40px;
+
     @media screen and (max-width:767px) {
         padding: 40px 12px 0 12px;
     }
+
     .outer_wrap {
         background: #E65005;
         border-radius: 24px;
@@ -51,17 +53,47 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 56px;
+
                 @media screen and (max-width:767px) {
                     flex-direction: column;
                     gap: 12px;
                 }
+
                 li {
+                    position: relative;
+
                     a {
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 130%;
                         color: #ffffff;
                         text-decoration: underline;
+
+                        &.disable {
+                            opacity: 0.5;
+                            cursor: not-allowed;
+                        }
+                    }
+
+                    span {
+                        font-size: 10px;
+                        font-weight: 400;
+                        line-height: 100%;
+                        color: #E65005;
+                        padding: 4px;
+                        background: #ffffff;
+                        border-radius: 12px;
+                        position: absolute;
+                        top: -18px;
+                        white-space: nowrap;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        width: fit-content;
+
+                        @media screen and (max-width:767px) {
+                            bottom: -12px;
+                        }
                     }
                 }
             }
@@ -72,10 +104,12 @@
         display: flex;
         justify-content: space-between;
         margin: 56px 0 24px 0;
+
         @media screen and (max-width:767px) {
             flex-direction: column;
             align-items: center;
         }
+
         p {
             font-size: 14px;
             font-weight: 300;
@@ -87,11 +121,13 @@
         .bottom_list {
             display: flex;
             gap: 40px;
+
             @media screen and (max-width:767px) {
                 flex-direction: column;
                 align-items: center;
                 gap: 0;
             }
+
             li {
                 a {
                     font-size: 14px;
