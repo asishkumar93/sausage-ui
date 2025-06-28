@@ -258,7 +258,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 72px;
+  gap: 56px;
 }
 @media screen and (max-width: 991px) {
   .header__wrapper .nav_header .nav_list {
@@ -1260,6 +1260,7 @@ button {
 .vendors__form__wrapper .form_wrap {
   background: #F7F8FA;
   border-radius: 24px;
+  position: relative;
 }
 .vendors__form__wrapper .form_wrap h2 {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -1353,6 +1354,47 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 42px;
+}
+.vendors__form__wrapper .form_wrap .thankYou {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 400px;
+  margin: auto;
+  background: #E65005;
+  padding: 12px 32px;
+  border-radius: 12px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: none;
+}
+.vendors__form__wrapper .form_wrap .thankYou .flex_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.vendors__form__wrapper .form_wrap .thankYou .flex_wrap img {
+  width: 16px;
+  height: 16px;
+}
+.vendors__form__wrapper .form_wrap .thankYou .flex_wrap span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #ffffff;
+}
+.vendors__form__wrapper .form_wrap .thankYou.showThankYou {
+  display: block;
 }
 
 .musical__wrapper.vendors_swiper .title_wrap {

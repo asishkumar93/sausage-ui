@@ -143,6 +143,13 @@
 
                     <button type="submit" class="btnOrange"><span>Register for Exhibitor/Vendor</span></button>
                 </form>
+
+                <div id="thankYouMessage" class="thankYou">
+                    <div class="flex_wrap">
+                        <img src="../assets/img/icons/check-circle.svg" alt="" />
+                        <span>Thank you for submitting the form!</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -239,15 +246,6 @@
                 </li>
             </ol>
 
-
-
-
-
-
-
-
-
-
             <h4>Early Bird Pricing is available until October 31, 2025</h4>
 
             <h3>Cancellation Policy:</h3>
@@ -308,17 +306,6 @@
                 return isChecked;
             }
 
-            // Utility: Validate a text input or textarea
-            // function validateField(field) {
-            //     const errorMsg = field.closest('.formGroup')?.querySelector('.errorMsg') &&
-            //         field.closest('.innerFormGroup')?.querySelector('.errorMsg');
-            //     if (!errorMsg) return true;
-
-            //     const isValid = field.value.trim() !== '';
-            //     errorMsg.style.display = isValid ? 'none' : 'block';
-            //     return isValid;
-            // }
-
             function validateField(field) {
                 const container = field.closest('.innerFormGroup') || field.closest('.formGroup');
                 const errorMsg = container?.querySelector('.errorMsg');
@@ -341,8 +328,6 @@
                 return isValid;
             }
 
-
-            // Attach onchange validation for all inputs and textareas
             inputs.forEach(input => {
                 input.addEventListener('change', () => {
                     if (input.type === 'radio') {
@@ -353,20 +338,16 @@
                 });
             });
 
-            // Handle form submission
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
 
                 let isValid = true;
 
-                // Validate all radio groups
                 const radioGroups = ['city', 'setup', 'power', 'offers'];
                 radioGroups.forEach(name => {
                     isValid = validateRadioGroup(name) && isValid;
                 });
 
-
-                // Validate textareas and text inputs
                 const requiredFields = ['brief', 'name', 'email', 'phone'];
                 requiredFields.forEach(id => {
                     const field = document.getElementById(id);
@@ -375,22 +356,32 @@
                     }
                 });
 
-                // If valid, show thank you message
                 if (isValid) {
-                    const thankYou = document.createElement('div');
-                    thankYou.textContent = 'Thank you for submitting the form!';
-                    thankYou.style.cssText = 'padding: 15px; margin-top: 20px; background: #4CAF50; color: white; text-align: center;';
-                    form.after(thankYou);
+                    const thankYouDiv = document.getElementById('thankYouMessage');
+                    thankYouDiv.classList.add('showThankYou');
                     form.reset();
 
-                    // Remove thank you message after 3 seconds
                     setTimeout(() => {
-                        thankYou.remove();
+                        thankYouDiv.classList.remove('showThankYou');
                     }, 3000);
 
-                    // Hide any error messages
                     errorMessages.forEach(msg => msg.style.display = 'none');
                 }
+
+
+                // if (isValid) {
+                //     const thankYou = document.createElement('div');
+                //     thankYou.textContent = 'Thank you for submitting the form!';
+                //     thankYou.style.cssText = 'padding: 15px; margin-top: 20px; background: #4CAF50; color: white; text-align: center;';
+                //     form.after(thankYou);
+                //     form.reset();
+
+                //     setTimeout(() => {
+                //         thankYou.remove();
+                //     }, 3000);
+
+                //     errorMessages.forEach(msg => msg.style.display = 'none');
+                // }
             });
         });
     </script>
