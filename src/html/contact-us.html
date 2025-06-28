@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" />
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link href="/assets/css/app.min.css" rel="stylesheet" />
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    @@include('components/header.html')
+
+    <section class="contact__form__wrapper">
+        <div class="container">
+            <div class="main_wrapper">
+                <div class="bg_wrap">
+                    <img src="../assets/img/contact/bg.png" alt="" />
+                    <h2 class="title48">Let's Get In Touch</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="contact_form_wrap">
+                            <form action="" id="contactForm">
+                                <div class="flex_fields">
+                                    <div class="formGroup">
+                                        <label for="name">Full name<sup>*</sup></label>
+                                        <input type="text" name="" id="name" class="controls">
+                                        <div class="errorMsg">Enter your full name</div>
+                                    </div>
+                                    <div class="formGroup">
+                                        <label for="email">Email address<sup>*</sup></label>
+                                        <input type="text" name="" id="email" class="controls">
+                                        <div class="errorMsg">Enter your email address</div>
+                                    </div>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="comment">Message</label>
+                                    <textarea name="comment" id="comment" class="controls textAreaLast"
+                                        rows="4"></textarea>
+                                </div>
+
+                                <button type="submit" class="btnOrange">
+                                    <span>Submit</span>
+                                </button>
+                            </form>
+
+                            <div id="thankuFormModal" class="thankuFormModal">
+                                <div class="msg">
+                                    <h3>Thanks for Reaching Out <br />
+                                        You’re on a Roll! 🌭</h3>
+
+                                    <p>We’ll be in touch soon, <br />
+                                        grab a cold one till then!</p>
+
+                                    <a href="./contact-us.html" class="btnBack">
+                                        Write us again
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="information_contents">
+                            <div class="contact_info">
+                                <div class="img">
+                                    <img src="../assets/img/contact/mail.svg" alt="" />
+                                    <span>Email</span>
+                                </div>
+
+                                <div class="tagWrap">
+                                    <div class="tag">
+                                        <a href="mailto:info@itsasausagefest.com">info@itsasausagefest.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact_info">
+                                <div class="img">
+                                    <img src="../assets/img/contact/phone.svg" alt="" />
+                                    <span>Contact</span>
+                                </div>
+
+                                <div class="tagWrap">
+                                    <div class="tag">
+                                        <a href="#">416 840-6943</a>
+                                    </div>
+                                    <span>: Office</span>
+                                </div>
+
+                                <div class="tagWrap">
+                                    <div class="tag">
+                                        <a href="#">1 (877) 360-0066</a>
+                                    </div>
+                                    <span>: Toll Free</span>
+                                </div>
+
+                                <div class="tagWrap">
+                                    <div class="tag">
+                                        <a href="#">1 (888) 354-5659</a>
+                                    </div>
+                                    <span>: Fax</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map__wrapper">
+        <div class="container">
+            <div class="title">
+                <div class="innerFlex">
+                    <img src="../assets/img/contact/location.svg" alt="" />
+                    <h4>LOCATION</h4>
+                </div>
+                <p>820 Yonge Street, Unit C16, Toronto, Ontario, M4W 0A9</p>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26537.23774381811!2d-79.40415172414752!3d43.66227777798342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ae602e69f7%3A0x5bcef450f30995e1!2s820%20Yonge%20St%20Suite%20C16%2C%20Toronto%2C%20ON%20M4W%203T3%2C%20Canada!5e0!3m2!1sen!2sin!4v1751111652951!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/footer.html')
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/app.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const nameError = nameInput.nextElementSibling;
+            const emailError = emailInput.nextElementSibling;
+
+            let nameValid = false;
+            let emailValid = false;
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            function validateName() {
+                if (nameInput.value.trim() === '') {
+                    nameError.style.display = 'block';
+                    nameValid = false;
+                } else {
+                    nameError.style.display = 'none';
+                    nameValid = true;
+                }
+                toggleSubmit();
+            }
+
+            function validateEmail() {
+                if (!emailRegex.test(emailInput.value.trim())) {
+                    emailError.textContent = 'Enter a valid email address';
+                    emailError.style.display = 'block';
+                    emailValid = false;
+                } else {
+                    emailError.style.display = 'none';
+                    emailValid = true;
+                }
+                toggleSubmit();
+            }
+
+            function toggleSubmit() {
+                submitBtn.disabled = !(nameValid && emailValid);
+            }
+
+            nameInput.addEventListener('change', validateName);
+            emailInput.addEventListener('change', validateEmail);
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                validateName();
+                validateEmail();
+
+                if (nameValid && emailValid) {
+                    const thankuModal = document.getElementById('thankuFormModal');
+                    thankuModal.classList.add('show');
+                    form.reset();
+                    submitBtn.disabled = true;
+                    nameValid = emailValid = false;
+
+                    setTimeout(() => {
+                        thankuModal.classList.remove('show');
+                    }, 3000);
+                }
+            });
+
+            submitBtn.disabled = true;
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="/assets/css/app.min.css" rel="stylesheet" />
 
-    <title>Sausage</title>
+    <title>Vendor</title>
 </head>
 
 <body>
@@ -109,9 +109,6 @@
                             <label for="brief">5. Brief description of menu/offerings<sup>*</sup></label>
                             <textarea name="brief" id="brief" class="controls textArea" rows="10"
                                 placeholder="Write your offerings"></textarea>
-
-                            <!-- <input type="text" name="brief" id="brief" class="controls brief"
-                                placeholder="Write your offerings"> -->
                             <div class="errorMsg">Please write your offerings</div>
                         </div>
                         <div class="formGroup">
@@ -367,21 +364,6 @@
 
                     errorMessages.forEach(msg => msg.style.display = 'none');
                 }
-
-
-                // if (isValid) {
-                //     const thankYou = document.createElement('div');
-                //     thankYou.textContent = 'Thank you for submitting the form!';
-                //     thankYou.style.cssText = 'padding: 15px; margin-top: 20px; background: #4CAF50; color: white; text-align: center;';
-                //     form.after(thankYou);
-                //     form.reset();
-
-                //     setTimeout(() => {
-                //         thankYou.remove();
-                //     }, 3000);
-
-                //     errorMessages.forEach(msg => msg.style.display = 'none');
-                // }
             });
         });
     </script>
