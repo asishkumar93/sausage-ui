@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/img/favicon.svg" />
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.8/dist/lenis.css">
     <link href="/assets/css/app.min.css" rel="stylesheet" />
 
     <title>Contact Us</title>
@@ -14,7 +15,8 @@
 
 <body>
 
-    <header class="header__wrapper">
+    <main id="main-scroll">
+        <header class="header__wrapper">
     <div class="container">
         <nav class="nav_header">
             <div class="humbuger_wrap">
@@ -38,22 +40,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:" class="disable">
+                    <a href="../activities.html">
                         Activities
                     </a>
-                    <span>Coming soon</span>
                 </li>
                 <li>
-                    <a href="javascript:" class="disable">
+                    <a href="../sponsors.html">
                         Sponsors
                     </a>
-                     <span>Coming soon</span>
                 </li>
                 <li>
-                    <a href="javascript:" class="disable">
+                    <a href="../schedule.html">
                         Schedule
                     </a>
-                     <span>Coming soon</span>
                 </li>
                 <li>
                     <a href="../contact-us.html">Contact us</a>
@@ -62,132 +61,130 @@
         </nav>
     </div>
 </header>
+        <section class="contact__form__wrapper">
+            <div class="container">
+                <div class="main_wrapper">
+                    <div class="bg_wrap">
+                        <img src="../assets/img/contact/bg.png" alt="" />
+                        <h2 class="title48">Let's Get In Touch</h2>
+                    </div>
 
-    <section class="contact__form__wrapper">
-        <div class="container">
-            <div class="main_wrapper">
-                <div class="bg_wrap">
-                    <img src="../assets/img/contact/bg.png" alt="" />
-                    <h2 class="title48">Let's Get In Touch</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <div class="contact_form_wrap">
-                            <form action="" id="contactForm">
-                                <div class="flex_fields">
-                                    <div class="formGroup">
-                                        <label for="name">Full name<sup>*</sup></label>
-                                        <input type="text" name="" id="name" class="controls">
-                                        <div class="errorMsg">Enter your full name</div>
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <div class="contact_form_wrap">
+                                <form action="" id="contactForm">
+                                    <div class="flex_fields">
+                                        <div class="formGroup">
+                                            <label for="name">Full name<sup>*</sup></label>
+                                            <input type="text" name="" id="name" class="controls">
+                                            <div class="errorMsg">Enter your full name</div>
+                                        </div>
+                                        <div class="formGroup">
+                                            <label for="email">Email address<sup>*</sup></label>
+                                            <input type="text" name="" id="email" class="controls">
+                                            <div class="errorMsg">Enter your email address</div>
+                                        </div>
                                     </div>
                                     <div class="formGroup">
-                                        <label for="email">Email address<sup>*</sup></label>
-                                        <input type="text" name="" id="email" class="controls">
-                                        <div class="errorMsg">Enter your email address</div>
+                                        <label for="comment">Message</label>
+                                        <textarea name="comment" id="comment" class="controls textAreaLast"
+                                            rows="4"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btnOrange">
+                                        <span>Submit</span>
+                                    </button>
+                                </form>
+
+                                <div id="thankuFormModal" class="thankuFormModal">
+                                    <div class="msg">
+                                        <h3>Thanks for Reaching Out <br />
+                                            You’re on a Roll! 🌭</h3>
+
+                                        <p>We’ll be in touch soon, <br />
+                                            grab a cold one till then!</p>
+
+                                        <a href="./contact-us.html" class="btnBack">
+                                            Write us again
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="formGroup">
-                                    <label for="comment">Message</label>
-                                    <textarea name="comment" id="comment" class="controls textAreaLast"
-                                        rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4">
+                            <div class="information_contents">
+                                <div class="contact_info">
+                                    <div class="img">
+                                        <img src="../assets/img/contact/mail.svg" alt="" />
+                                        <span>Email</span>
+                                    </div>
+
+                                    <div class="tagWrap">
+                                        <div class="tag">
+                                            <a href="mailto:info@itsasausagefest.com">info@itsasausagefest.com</a>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <button type="submit" class="btnOrange">
-                                    <span>Submit</span>
-                                </button>
-                            </form>
+                                <div class="contact_info">
+                                    <div class="img">
+                                        <img src="../assets/img/contact/phone.svg" alt="" />
+                                        <span>Contact</span>
+                                    </div>
 
-                            <div id="thankuFormModal" class="thankuFormModal">
-                                <div class="msg">
-                                    <h3>Thanks for Reaching Out <br />
-                                        You’re on a Roll! 🌭</h3>
+                                    <div class="tagWrap">
+                                        <div class="tag">
+                                            <a href="#">416 840-6943</a>
+                                        </div>
+                                        <span>: Office</span>
+                                    </div>
 
-                                    <p>We’ll be in touch soon, <br />
-                                        grab a cold one till then!</p>
+                                    <div class="tagWrap">
+                                        <div class="tag">
+                                            <a href="#">1 (877) 360-0066</a>
+                                        </div>
+                                        <span>: Toll Free</span>
+                                    </div>
 
-                                    <a href="./contact-us.html" class="btnBack">
-                                        Write us again
-                                    </a>
+                                    <div class="tagWrap">
+                                        <div class="tag">
+                                            <a href="#">1 (888) 354-5659</a>
+                                        </div>
+                                        <span>: Fax</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-12 col-md-4">
-                        <div class="information_contents">
-                            <div class="contact_info">
-                                <div class="img">
-                                    <img src="../assets/img/contact/mail.svg" alt="" />
-                                    <span>Email</span>
-                                </div>
-
-                                <div class="tagWrap">
-                                    <div class="tag">
-                                        <a href="mailto:info@itsasausagefest.com">info@itsasausagefest.com</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="contact_info">
-                                <div class="img">
-                                    <img src="../assets/img/contact/phone.svg" alt="" />
-                                    <span>Contact</span>
-                                </div>
-
-                                <div class="tagWrap">
-                                    <div class="tag">
-                                        <a href="#">416 840-6943</a>
-                                    </div>
-                                    <span>: Office</span>
-                                </div>
-
-                                <div class="tagWrap">
-                                    <div class="tag">
-                                        <a href="#">1 (877) 360-0066</a>
-                                    </div>
-                                    <span>: Toll Free</span>
-                                </div>
-
-                                <div class="tagWrap">
-                                    <div class="tag">
-                                        <a href="#">1 (888) 354-5659</a>
-                                    </div>
-                                    <span>: Fax</span>
-                                </div>
-                            </div>
-                        </div>
+        <section class="map__wrapper">
+            <div class="container">
+                <div class="title">
+                    <div class="innerFlex">
+                        <img src="../assets/img/contact/location.svg" alt="" />
+                        <h4>LOCATION</h4>
                     </div>
+                    <p>820 Yonge Street, Unit C16, Toronto, Ontario, M4W 0A9</p>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26537.23774381811!2d-79.40415172414752!3d43.66227777798342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ae602e69f7%3A0x5bcef450f30995e1!2s820%20Yonge%20St%20Suite%20C16%2C%20Toronto%2C%20ON%20M4W%203T3%2C%20Canada!5e0!3m2!1sen!2sin!4v1751111652951!5m2!1sen!2sin"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="map__wrapper">
-        <div class="container">
-            <div class="title">
-                <div class="innerFlex">
-                    <img src="../assets/img/contact/location.svg" alt="" />
-                    <h4>LOCATION</h4>
-                </div>
-                <p>820 Yonge Street, Unit C16, Toronto, Ontario, M4W 0A9</p>
-            </div>
-
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26537.23774381811!2d-79.40415172414752!3d43.66227777798342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34ae602e69f7%3A0x5bcef450f30995e1!2s820%20Yonge%20St%20Suite%20C16%2C%20Toronto%2C%20ON%20M4W%203T3%2C%20Canada!5e0!3m2!1sen!2sin!4v1751111652951!5m2!1sen!2sin"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <div class="footer">
+        </section>
+        <div class="footer">
     <div class="outer_wrap">
         <div class="inner_wrap">
             <div class="contents">
                 <div class="img">
-                    <img src="../../assets/img/footer/sausage.svg" alt="" />
+                    <img src="../../assets/img/footer/sausage.png" alt="" />
                 </div>
                 <h2 class="title80">We Look Forward <br /> To Serve You!</h2>
 
@@ -206,22 +203,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="javascript:" class="disable">
+                    <a href="../activities.html">
                         Activities
                     </a>
-                    <span>Coming soon</span>
                 </li>
                 <li>
-                    <a href="javascript:" class="disable">
+                    <a href="../sponsors.html">
                         Sponsors
                     </a>
-                    <span>Coming soon</span>
                 </li>
                 <li>
-                    <a href="javascript:" class="disable">
+                    <a href="../schedule.html">
                         Schedule
                     </a>
-                    <span>Coming soon</span>
                 </li>
                 <li>
                     <a href="../contact-us.html">
@@ -248,10 +242,12 @@
         </ul>
     </div>
 </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
     <script src="/assets/js/app.min.js"></script>
 
     <script>
@@ -320,7 +316,6 @@
             submitBtn.disabled = true;
         });
     </script>
-
 
 </body>
 
