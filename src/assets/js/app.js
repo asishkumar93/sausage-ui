@@ -32,4 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("active");
     }
   });
+
+
+  
+  // Initialize Lenis
+  const lenis = new Lenis({
+    duration: 1.8, // scroll animation duration (seconds)
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // smooth easing
+    orientation: "vertical", // vertical scrolling
+    wheelMultiplier: 1, // wheel speed multiplier
+    smoothTouch: false, // leave true if you want smooth touch on mobile
+    infinite: false,
+    autoResize: true,
+  });
+
+  // Required RAF loop that drives Lenis
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 });
+
+
+

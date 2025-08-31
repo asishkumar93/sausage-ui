@@ -1,10 +1,5 @@
 .hero__video__wrapper {
-    margin-top: 180px;
     padding-bottom: 56px;
-
-    @media screen and (max-width:991px) {
-        margin-top: 120px;
-    }
 
     .title_wrap {
         max-width: 554px;
@@ -145,8 +140,6 @@
         display: none;
 
         .sausage_card {
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
             position: relative;
 
             .img {
@@ -214,10 +207,6 @@
                 @media screen and (max-width:767px) {
                     display: none;
                 }
-            }
-
-            &:hover {
-                transform: translateY(-10px);
             }
         }
 

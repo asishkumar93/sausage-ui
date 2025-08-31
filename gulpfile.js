@@ -71,7 +71,7 @@ function copyscss(cb) {
 }
 
 function imageprocess(cb) {
-  gulp
+ return gulp
     .src("./src/assets/img/**/*", { encoding: false })
     .pipe(gulp.dest("./dist/assets/img/"))
     .pipe(browserSync.stream());
